@@ -1,0 +1,24 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "app.unspoken.Unspoken",
+        "paths": [
+          "/question/*",
+          "/post/*",
+          "/profile/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "app.unspoken.Unspoken"
+    ]
+  },
+  "activitycontinuation": {
+    "apps": [
+      "app.unspoken.Unspoken"
+    ]
+  }
+}
