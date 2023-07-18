@@ -5,7 +5,7 @@
         "appID": "app.unspoken.Unspoken",
         "paths": [
           "/question/*",
-          "/post/*",
+          "/answer/*",
           "/profile/*"
         ]
       }
