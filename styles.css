@@ -43,3 +43,18 @@ p {
     background-color: #eee; /* Slightly darker white for hover effect */
     color: #7F66FF;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Reduce title size for mobile */
+    }
+    
+    p {
+        font-size: 1em; /* Adjust text size for mobile */
+    }
+    
+    .appstore-button {
+        padding: 8px 20px; /* Slightly smaller button for mobile */
+        font-size: 0.9em;
+    }
+}
