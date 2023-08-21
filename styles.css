@@ -1,7 +1,7 @@
 body {
     background-color: #7F66FF;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FigTree', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@ body {
 
 h1 {
     font-size: 3em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FigTree', sans-serif;
     margin-bottom: 0.5em;
 }
 
