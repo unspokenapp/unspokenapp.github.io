@@ -46,15 +46,15 @@ p {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.5em; /* Reduce title size for mobile */
+        font-size: 3em; /* Kept the same title size for mobile */
     }
     
     p {
-        font-size: 1em; /* Adjust text size for mobile */
+        font-size: 1.4em; /* Increased text size for better mobile readability */
     }
     
     .appstore-button {
-        padding: 8px 20px; /* Slightly smaller button for mobile */
-        font-size: 0.9em;
+        padding: 12px 26px; /* Made the button a bit larger for easier tapping */
+        font-size: 1.1em;  /* Made font size a bit larger for clarity */
     }
 }
