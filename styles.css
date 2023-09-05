@@ -68,7 +68,7 @@ p {
     text-align: center; /* This will help in centering the image inside the button */
 }
 
-.button-container {
+/*.button-container {
     display: inline-block;
 }
 
@@ -77,6 +77,13 @@ p {
     width: 30%;
     max-width: 320px;
     height: auto;
+}*/
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensuring it takes full width to center the image properly */
 }
 
 @media (max-width: 768px) {
