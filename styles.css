@@ -25,7 +25,7 @@ p {
     padding: 0 15%; /* Added horizontal padding to reduce width */
 }
 
-.appstore-button {
+.branded-button {
     display: inline-block;
     padding: 16px 32px; /* Increased padding to make it more capsule-like */
     background-color: white; /* Changed to white */
@@ -39,7 +39,7 @@ p {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.appstore-button:hover {
+.branded-button:hover {
     background-color: #eee; /* Slightly darker white for hover effect */
     color: #7F66FF;
 }
@@ -57,6 +57,28 @@ p {
     display: block;
 }
 
+.appstore-button {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    transition: none;
+    text-align: center; /* This will help in centering the image inside the button */
+}
+
+.button-container {
+    display: inline-block;
+}
+
+.button-container img {
+    display: block;
+    width: 30%;
+    max-width: 320px;
+    height: auto;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 3em; /* Kept the same title size for mobile */
@@ -66,7 +88,7 @@ p {
         font-size: 1.4em; /* Increased text size for better mobile readability */
     }
     
-    .appstore-button {
+    .branded-button {
         padding: 12px 26px; /* Made the button a bit larger for easier tapping */
         font-size: 1.1em;  /* Made font size a bit larger for clarity */
     }
