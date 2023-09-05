@@ -1,5 +1,6 @@
 body {
-    background-color: #7F66FF;
+/*    background-color: #7F66FF;*/
+    background: linear-gradient(to bottom, #7F66FF, #66BCFF);
     color: white;
     font-family: 'FigTree', sans-serif;
     display: flex;
