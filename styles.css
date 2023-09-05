@@ -45,18 +45,11 @@ p {
 }
 
 .logo {
-    width: 70%;
+    width: 50%;
     max-width: 480px;
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-@media (max-width: 685px) {
-    .logo {
-        width: 100%;
-        max-width: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -72,4 +65,9 @@ p {
         padding: 12px 26px; /* Made the button a bit larger for easier tapping */
         font-size: 1.1em;  /* Made font size a bit larger for clarity */
     }
+
+   /* .logo {
+        width: 100%;
+        max-width: none;
+    }*/
 }
