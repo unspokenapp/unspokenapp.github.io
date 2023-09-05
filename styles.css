@@ -86,6 +86,13 @@ p {
     width: 100%; /* Ensuring it takes full width to center the image properly */
 }
 
+.button-container img {
+    display: block;
+    width: 100%;  /* Will take up the width of the .button-container */
+    max-width: 240px;  /* Restricts the maximum width to 200px */
+    height: auto;  /* Maintains the aspect ratio */
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 3em; /* Kept the same title size for mobile */
