@@ -37,6 +37,27 @@ footer {
     font-family: 'FigTree', sans-serif; /* to keep the font consistent with the rest of your site */
 }
 
+.footer-copyright {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    cursor: default;
+}
+
+.footer-copyright:hover {
+    text-decoration: none;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
 .branded-button {
     display: inline-block;
     padding: 16px 32px; /* Increased padding to make it more capsule-like */
