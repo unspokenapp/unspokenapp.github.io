@@ -26,6 +26,17 @@ p {
     padding: 0 15%; /* Added horizontal padding to reduce width */
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'FigTree', sans-serif; /* to keep the font consistent with the rest of your site */
+}
+
 .branded-button {
     display: inline-block;
     padding: 16px 32px; /* Increased padding to make it more capsule-like */
