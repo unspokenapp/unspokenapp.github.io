@@ -1,6 +1,6 @@
 body {
-    background-color: #000000; /* Your background color */
-    color: white; /* Text color */
+    background-color: #171717;
+    color: white;
     font-family: 'FigTree', sans-serif;
     display: flex;
     flex-direction: column;
@@ -8,30 +8,55 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    border-left: 3px solid #666666;
+    padding-left: 60px; /* Increased left padding */
+    padding-top: 20px;  /* Added padding for better spacing */
+    padding-bottom: 20px;  /* Added padding for better spacing */
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.2em; /* Reduced font size */
+    font-family: 'FigTree', sans-serif;
+    margin-bottom: 20px;
+    color: #7F66FF;
 }
 
-p {
-    font-size: 1.5em;
+h2 {
+    font-size: 1.2em; /* Reduced font size */
+    margin-top: 40px; /* Added margin for spacing between sections */
+    margin-bottom: 10px;
 }
 
-.appstore-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #0a0a0a; /* Button background color */
-    color: white; /* Button text color */
-    border: none;
-    border-radius: 4px;
-    font-size: 1em;
-    text-decoration: none;
+.content p {
+    font-size: 1em;  /* Reduced font size */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-right: 10%;
 }
 
-.appstore-button:hover {
-    background-color: #303030;
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+        padding-right: 5%;
+    }
 }
