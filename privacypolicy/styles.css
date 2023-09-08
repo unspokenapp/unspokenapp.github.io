@@ -15,47 +15,47 @@ body {
     max-width: 800px;
     width: 100%;
     border-left: 3px solid #666666;
-    padding-left: 60px; /* Increased left padding */
-    padding-top: 20px;  /* Added padding for better spacing */
-    padding-bottom: 20px;  /* Added padding for better spacing */
+    padding-left: 60px; /* Retaining increased left padding */
+    padding-top: 20px;  /* Retaining top padding */
+    padding-bottom: 20px;  /* Retaining bottom padding */
 }
 
 h1 {
-    font-size: 2.2em; /* Reduced font size */
+    font-size: 2.2em; /* Retained font size */
     font-family: 'FigTree', sans-serif;
     margin-bottom: 20px;
     color: #7F66FF;
 }
 
 h2 {
-    font-size: 1.2em; /* Reduced font size */
-    margin-top: 40px; /* Added margin for spacing between sections */
-    margin-bottom: 10px;
+    font-size: 1.2em; /* Retained font size */
+    margin-top: 40px; /* Retained margin top for spacing */
+    margin-bottom: 10px; /* Retained margin bottom */
 }
 
 .content p {
-    font-size: 1em;  /* Reduced font size */
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding-right: 10%;
+    font-size: 1em;  /* Retained font size */
+    line-height: 1.5; /* Retained line height */
+    margin-bottom: 20px; /* Retained margin bottom */
+    padding-right: 10%; /* Retained padding right */
 }
 
 /* Mobile Specific Styles */
 @media (max-width: 768px) {
     .container {
-        padding-left: 20px;
+        padding-left: 20px; /* Retained padding left for mobile view */
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.8em; /* Retained font size for mobile view */
     }
 
     h2 {
-        font-size: 1.4em;
+        font-size: 1.4em; /* Retained font size for mobile view */
     }
 
     .content p {
-        font-size: 0.9em;
-        padding-right: 5%;
+        font-size: 0.9em; /* Retained font size for mobile view */
+        padding-right: 5%; /* Retained padding right for mobile view */
     }
 }
