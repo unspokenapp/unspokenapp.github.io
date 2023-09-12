@@ -7,6 +7,8 @@
           "/",
           "www.unspoken.app",
           "unspoken.app",
+          "/terms/*",
+          "/privacy/*",
           "/question/*",
           "/prompt/*",
           "/answer/*",
