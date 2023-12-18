@@ -28,6 +28,19 @@ h1 {
 }
 
 h2 {
+    font-size: 1.8em; /* Retained font size */
+    margin-top: 40px; /* Retained margin top for spacing */
+    margin-bottom: 10px; /* Retained margin bottom */
+}
+
+h3 {
+    font-size: 1.5em; /* Retained font size */
+    margin-top: 40px; /* Retained margin top for spacing */
+    margin-bottom: 10px; /* Retained margin bottom */
+}
+
+/* Used to be h2 */
+h4 {
     font-size: 1.2em; /* Retained font size */
     margin-top: 40px; /* Retained margin top for spacing */
     margin-bottom: 10px; /* Retained margin bottom */
