@@ -20,6 +20,10 @@ body {
     padding-bottom: 20px;  /* Retaining bottom padding */
 }
 
+a {
+  color: #7F66FF;
+}
+
 h1 {
     font-size: 2.2em; /* Retained font size */
     font-family: 'FigTree', sans-serif;
