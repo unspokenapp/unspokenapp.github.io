@@ -5,74 +5,132 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 0;
     padding: 20px;
     text-align: left;
 }
 
+/* Back to home link */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 32px;
+    transition: color 0.2s ease;
+    align-self: flex-start;
+    max-width: 800px;
+    width: 100%;
+}
+
+.back-link:hover {
+    color: #7F66FF;
+}
+
+.back-link svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* Brand header */
+.legal-brand {
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.legal-brand img {
+    height: 28px;
+    width: auto;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+.legal-brand a:hover img {
+    opacity: 0.6;
+}
+
 .container {
     max-width: 800px;
     width: 100%;
-    border-left: 3px solid #666666;
-    padding-left: 60px; /* Retaining increased left padding */
-    padding-top: 20px;  /* Retaining top padding */
-    padding-bottom: 20px;  /* Retaining bottom padding */
+    border-left: 3px solid #333;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 a {
-  color: #7F66FF;
+    color: #7F66FF;
 }
 
 h1 {
-    font-size: 2.2em; /* Retained font size */
+    font-size: 2.2em;
     font-family: 'FigTree', sans-serif;
     margin-bottom: 20px;
     color: #7F66FF;
 }
 
 h2 {
-    font-size: 1.8em; /* Retained font size */
-    margin-top: 40px; /* Retained margin top for spacing */
-    margin-bottom: 10px; /* Retained margin bottom */
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.5em; /* Retained font size */
-    margin-top: 40px; /* Retained margin top for spacing */
-    margin-bottom: 10px; /* Retained margin bottom */
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
-/* Used to be h2 */
 h4 {
-    font-size: 1.2em; /* Retained font size */
-    margin-top: 40px; /* Retained margin top for spacing */
-    margin-bottom: 10px; /* Retained margin bottom */
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .content p {
-    font-size: 1em;  /* Retained font size */
-    line-height: 1.5; /* Retained line height */
-    margin-bottom: 20px; /* Retained margin bottom */
-    padding-right: 10%; /* Retained padding right */
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 10%;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content li p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content ul {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 /* Mobile Specific Styles */
 @media (max-width: 768px) {
     .container {
-        padding-left: 20px; /* Retained padding left for mobile view */
+        padding-left: 20px;
     }
 
     h1 {
-        font-size: 1.8em; /* Retained font size for mobile view */
+        font-size: 1.8em;
     }
 
     h2 {
-        font-size: 1.4em; /* Retained font size for mobile view */
+        font-size: 1.4em;
     }
 
     .content p {
-        font-size: 0.9em; /* Retained font size for mobile view */
-        padding-right: 5%; /* Retained padding right for mobile view */
+        font-size: 0.9em;
+        padding-right: 5%;
+    }
+
+    .back-link {
+        margin-bottom: 24px;
+    }
+
+    .legal-brand img {
+        height: 22px;
     }
 }

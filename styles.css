@@ -1,5 +1,4 @@
 body {
-/*    background-color: #7F66FF;*/
     background: linear-gradient(to bottom, #7F66FF, #66BCFF);
     color: white;
     font-family: 'FigTree', sans-serif;
@@ -7,10 +6,36 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 20px;
     text-align: center;
+    box-sizing: border-box;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glassmorphism hero card */
+.hero-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 48px 40px 40px;
+    max-width: 520px;
+    width: 100%;
+    animation: fadeInUp 0.7s ease-out both;
 }
 
 h1 {
@@ -20,68 +45,64 @@ h1 {
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0 15%; /* Added horizontal padding to reduce width */
+    font-size: 1.15em;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    opacity: 0.92;
 }
 
+/* Footer */
 footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: white;
     text-align: center;
-    padding: 10px;
-    font-family: 'FigTree', sans-serif; /* to keep the font consistent with the rest of your site */
+    padding: 14px 20px;
+    font-family: 'FigTree', sans-serif;
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    box-sizing: border-box;
 }
 
 .footer-copyright {
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    margin: 0 16px;
     cursor: default;
 }
 
-.footer-copyright:hover {
-    text-decoration: none;
-}
-
-.footer-links {
-    color: white;
-    text-decoration: none;
+.footer-sep {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.3);
     margin: 0 16px;
 }
 
-.footer-links:hover {
-    text-decoration: underline;
-}
-
-.branded-button {
-    display: inline-block;
-    padding: 16px 32px; /* Increased padding to make it more capsule-like */
-    background-color: white; /* Changed to white */
-    color: #7F66FF; /* Changed to the background color */
-    border: none;
-    border-radius: 50px; /* Increased to give a capsule appearance */
-    font-size: 1em;
-    font-weight: 700;
+.footer-links {
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    box-shadow: 10 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
-.branded-button:hover {
-    background-color: #eee; /* Slightly darker white for hover effect */
-    color: #7F66FF;
+.footer-links:hover {
+    color: white;
+    text-decoration: none;
 }
 
+/* Logo */
 .logo-container {
-    width: 50%;
-    max-width: 480px;
+    width: 70%;
+    max-width: 360px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 8px;
 }
 
 .logo {
@@ -90,6 +111,7 @@ footer {
     display: block;
 }
 
+/* App Store button */
 .appstore-button {
     display: inline-block;
     margin: 0 auto;
@@ -97,51 +119,74 @@ footer {
     border: none;
     background: none;
     box-shadow: none;
-    transition: none;
-    text-align: center; /* This will help in centering the image inside the button */
+    text-align: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/*.button-container {
-    display: inline-block;
+.appstore-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
-
-.button-container img {
-    display: block;
-    width: 30%;
-    max-width: 320px;
-    height: auto;
-}*/
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensuring it takes full width to center the image properly */
+    width: 100%;
 }
 
 .button-container img {
     display: block;
-    width: 100%;  /* Will take up the width of the .button-container */
-    max-width: 180px;  /* Restricts the maximum width to 200px */
-    height: auto;  /* Maintains the aspect ratio */
+    width: 100%;
+    max-width: 180px;
+    height: auto;
 }
 
+/* Contact button (support page) */
+.contact-button {
+    display: inline-block;
+    padding: 14px 32px;
+    background: white;
+    color: #7F66FF;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'FigTree', sans-serif;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 3em; /* Kept the same title size for mobile */
-    }
-    
-    p {
-        font-size: 1.4em; /* Increased text size for better mobile readability */
-    }
-    
-    .branded-button {
-        padding: 12px 26px; /* Made the button a bit larger for easier tapping */
-        font-size: 1.1em;  /* Made font size a bit larger for clarity */
+    body {
+        padding: 20px 16px 70px;
     }
 
-   /* .logo {
-        width: 100%;
-        max-width: none;
-    }*/
+    .hero-card {
+        padding: 36px 24px 32px;
+        border-radius: 20px;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .logo-container {
+        width: 80%;
+    }
+
+    footer {
+        padding: 12px 16px;
+        font-size: 0.8em;
+    }
+
+    .footer-sep {
+        margin: 0 10px;
+    }
 }
